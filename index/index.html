@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeFlix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="..images/type-flix.png" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 3px 3px 3px black;
+        }
+        span {
+            color: red;
+        }
+
+        header {
+            padding: 60px;
+            background: #FFFFFF url("images/background\ image01.jpg") center top fixed no-repeat;
+        }
+        header > h1 {
+            text-align: center;
+        }
+        header h2 {
+            text-align: center;
+        }
+
+        .piscar {
+            animation: piscar 0.5s normal infinite;
+        }
+
+        @keyframes piscar {
+            0% {
+                color: #fff;
+            } 
+            50% {
+                color: rgb(255, 0, 0);
+            }
+            100% {
+                color: #fff;
+            }
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        article {
+            max-width: 240px;
+        }
+        article img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+        article:hover img {
+            transform: translateY(-10px);
+            animation: float 2s ease-out;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+        article h2 {
+            font-size: 20px;
+            text-align: center;
+        }
+           /* Media query para telas com largura máxima de 768px (tablets e menores) */
+           @media (max-width: 768px) {
+            header {
+                padding: 30px;
+            }
+
+            article {
+                max-width: calc(50% - 20px); /* Duas colunas com um espaçamento de 20px */
+            }
+        }
+
+        /* Media query para telas com largura máxima de 480px (celulares) */
+        @media (max-width: 480px) {
+            header {
+                padding: 20px;
+            }
+
+            article {
+                max-width: 100%; /* Largura total para layout de coluna única */
+            }
+
+            footer {
+                padding: 10px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Assista Filmes on-line <span>Grátis</span>.</h1>
+        <h2 class="piscar">Totalmente Grátis.</h2>
+    </header>
+    <main>
+        <article class="harry-potter">
+            <a href="../harry-potter/harry-potter-7pt2.html" rel="external" target="_blank">
+                <img src="images/Harry Potter e as Relíquias da Morte Parte 2 Capa Harry.jpg" alt="harry-potter">
+            </a>
+            <h2>Harry Potter e as Relíquias<br> da Morte Parte 2</h2>
+        </article>
+        <article class="o-portal-secreto">
+            <a href="">
+                <img src="../images/images/164067_000_p.jpg" alt="o-portal-secreto">
+            </a>
+            <h2>O Portal Secreto</h2>
+        </article>
+        <article>
+            <a href=""><img src="../images/images/20150419-1.jpg" alt="age-of-ultron"></a>
+            <h2>Age Of Ultron</h2>
+        </article>
+        <article>
+            <a href=""><img src="../images/images/avdu02.jpg" alt="avengers-01"></a>
+            <h2>Era De Ultron</h2>
+        </article>
+        <article>
+            <a href=""><img src="../images/images/avg01.jpg" alt="avengers-02"></a>
+            <h2>Avengers: End Game</h2>
+        </article>
+        <article>
+            <a href=""><img src="../images/images/avg03.jpg" alt="avengers-03"></a>
+            <h2>Ifinity War</h2>
+        </article>
+        <article>
+            <a href=""><img src="../images/images/cpt05.jpg" alt="capita-marvel"></a>
+            <h2>Capitã Marvel</h2>
+        </article>
+        <article>
+            <a href=""><img src="../images/images/parcy.jpg" alt="percy-jackson"></a>
+            <h2>Percy Jackson: Ladrão de Raios</h2>
+        </article>
+        <!-- Add more articles for other movies as needed -->
+    </main>
+    <footer >
+        <div>
+            <div>
+                <a href="" class="faq"><p>Faq</p></a>
+                <a href="https://api.whatsapp.com/send/?phone=3899931839&text&type=phone_number&app_absent=0" rel="external" target="_blank" class="suporte"><p>Suporte</p></a>
+            </div>
+            <p>&copy; TypeFlix. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
