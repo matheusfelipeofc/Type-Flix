@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - TypeFlix</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="images/type-flix.png" type="image/x-icon">
+</head>
+<body>
+  <img src="../images/Typeflix-19-08-2023.png" alt="type-flix-logo" class="logo">
+  <div class="container">
+    <h2>Registro - <span style="color: red;">TypeFlix</span></h2>
+    <form id="loginForm">
+      <label for="username">Usuário:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Registrar</button>
+    </form>
+    <p id="loginMessage"></p>
+    <p id="registerText">Já é registrado? <a href="../index.html" id="registerLink">Fazer Login</a></p>
+  </div>
+  <div id="loading" class="loading">
+    <div class="loader"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

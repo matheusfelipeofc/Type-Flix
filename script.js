@@ -20,3 +20,13 @@ loginForm.addEventListener("submit", function (event) {
   }
 });
 
+// ... (código anterior)
+
+const registerLink = document.getElementById('registro/index.html');
+
+registerLink.addEventListener('click', function (event) {
+  event.preventDefault();
+  // Aqui você pode redirecionar o usuário para a página de registro ou tomar outra ação
+  // Por exemplo: window.location.href = 'register.html';
+  loginMessage.textContent = 'Registre-se para criar uma conta nova.';
+});
